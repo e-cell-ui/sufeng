@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/liebiao.css">
+    <link rel="stylesheet" type="text/css" href="css/detail.css"/>
+    <script src="js/jquery-1.11.0.js"></script>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/liebiao.js"></script>
+    
+
+</head>
+<body>
+    <!-- 侧边栏 -->
+<div class="right-nav">
+    <ul>
+        <li>
+            <a href="index.html">
+                <i class="lnr-user">
+                    <img src="img/1561433653(1).jpg">
+                </i></a>
+                <span style="left:60px;">&nbsp;&nbsp;我的速普&nbsp;&nbsp;</span>
+            
+        </li>
+        <li>
+            <a href="">
+                <i class="lnr-heart">
+                    <img src="img/1561433725(1).png">
+                </i>
+                <span style="left:60px;">&nbsp;&nbsp;我的收藏&nbsp;&nbsp;</span>
+            </a>
+        </li>
+        <li id="end">
+            <a href="cart.html">
+                <i class="lnr-cart">
+                    <img src="img/1561433902(1).jpg">
+                </i>
+                <span style="left:60px;">&nbsp;&nbsp;购物车&nbsp;&nbsp;</span>
+            </a>
+            <div class="cart-count">0</div>
+        </li>
+        <li class="scroll-top">
+            <i class="lnr-top">
+                <img src="img/1561434099(1).jpg">
+            </i>
+            <span style="left:60px;">&nbsp;&nbsp;返回顶部&nbsp;&nbsp;</span>
+        </li>
+    </ul>
+</div> 
+<!-- 头部 -->
+<div class="header">
+    <div class="top">
+        <div class="top-wrap">
+            <div class="top-login-box">
+                欢迎来到速普商城！请[<a href="denglu.html">登录</a>][<a href="zhuce.html">免费注册</a>]
+            </div>
+            <div class="top-nav">
+               <div class="box-li">
+                   <div class="top-nav-menu">
+                       <a href="">消费者告知书</a>
+                   </div>
+               </div>
+               <div class="box-li">
+                    <div class="top-nav-menu">
+                            <a href="">我的订单</a>
+                    </div>
+               </div>
+               <div class="box-li" id="supuy-user">
+                    <div class="top-nav-menu">
+                            <a href="">
+                                我的速普
+                                <span></span>
+                            </a>
+                    </div>
+                    <div id="user-con" class="user-con" style="display: none;">
+                        <ul>
+                            <li>
+                                <a href="">我的优惠券</a>
+                            </li>
+                            <li>
+                                <a href="">我的收藏</a>
+                            </li>
+                            <li>
+                                <a href="">我的积分</a>
+                            </li>
+                            <li>
+                                <a href="">现金账户</a>
+                            </li>
+                            <li>
+                                <a href="">待评价</a>
+                            </li>
+                        </ul>
+                    </div>    
+               </div>
+               <div class="box-li" id="supuy-app">
+                   <div class="top-nav-menu">
+                        <a href="">手机端
+                            <span></span>
+                        </a>
+                   </div>
+                   <div id="app-con" class="app-con" style="display: none;">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <img src="img/app.jpg" width="120" height="120" alt="APP二维码">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="img/weixin.jpg" width="120" height="120" alt="微信二维码">
+                                </a>
+                            </li>
+                        </ul>
+                   </div>
+               </div>
+               <div class="box-li">
+                    <div class="top-nav-menu">
+                            <a href="">网站导航</a>
+                    </div>
+               </div>
+               <div class="box-li" id="supuy-service">
+                    <div class="top-nav-menu">
+                            <a href="">
+                                400-618-0055
+                                <span></span>
+                            </a>
+                    </div>
+                    <div id="service-con" class="service-con" style="display: none;">
+                        <ul>
+                            <li>
+                                <a href="">帮助中心</a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    400-618-0055
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+               </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    <div class="midlle">
+        <div class="midlle-wrap">
+            <div class="logo-f1">
+                <a href="shgouye.html">
+                    <img src="img/logo.jpg" alt="速普母婴商城LOGO" title="速普母婴商城LOGO">
+                </a>
+            </div>
+            <div class="search-box">
+                <form action="" method="get" 
+                 name="searchform" id="searchform" class="searchform">
+                    <div class="search-icon"></div>
+                    <input type="text" name="keywords" id="search-text" value class="text-f1" autocomplete="off">
+                    <input type="submit" name="search-btn" id="search-btn" value="搜索">
+                </form>
+            </div>
+            <div class="cart-box">
+                <a href="cart.html" target="_blank" class="cart-small">
+                    <p></p>
+                    <span>购物车</span>
+                    <i class="triangle-left"></i>
+                    <em class="cart-no">0</em>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--222-->
+    <div class="headNav">
+        <div class="navCon-wrap">
+            <div class="navCon-cate">
+                <div class="cateTitle">
+                    <a href="">全部商品分类</a>
+                </div>
+            </div>
+            <div class="navCon-menu">
+                <ul>
+                    <li>
+                        <a href="">限时特卖</a>
+                    </li>
+                    <li>
+                        <a href="">白菜专区</a>
+                    </li>
+                    <li>
+                        <a href="">全球购</a>
+                    </li>
+                    <li>
+                        <a href="">手机客户端
+                            <i></i>
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="">在线客服</a>
+                    </li>
+                </ul>
+            </div>
+           
+        </div>
+      
+    </div>
+
+<!-- 列表 -->
+
+<div id="box">
+	
+	
+	
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+     
+<!-- 尾部 -->
+<div id="footer">
+        <div class="supuy-cult">
+            <div class="supuy-wrap">
+                <div class="cul-img">
+                    <img src="img/point3.png" />
+                </div>
+                <div class="cul-img">
+                    <img src="img/point4.png"/>
+                </div>
+                <div class="cul-img">
+                    <img src="img/point1.png" />
+                </div>
+                <div class="cul-img">
+                    <img src="img/point2.png" />
+                </div>
+            </div>
+        </div>
+        <div class="footer-nav">
+            <div class="fn-wrap">
+                <div class="fn-ul">
+                    <div class="fnul">
+                        <h3>新手指南</h3>
+                    </div>
+                    <ul>
+                        <li><a href="">购物流程</a> </li>
+                        <li><a href="">会员介绍</a> </li>
+                        <li><a href="">积分制度</a> </li>
+                    </ul>
+                </div>
+                <div class="fn-ul">
+                        <div class="fnul">
+                            <h3>新手指南</h3>
+                        </div>
+                        <ul>
+                            <li><a href="">购物流程</a> </li>
+                            <li><a href="">会员介绍</a> </li>
+                            <li><a href="">积分制度</a> </li>
+                        </ul>
+                </div>
+                <div class="fn-ul">
+                        <div class="fnul">
+                            <h3>新手指南</h3>
+                        </div>
+                        <ul>
+                            <li><a href="">购物流程</a> </li>
+                            <li><a href="">会员介绍</a> </li>
+                            <li><a href="">积分制度</a> </li>
+                        </ul>
+                </div>
+                <div class="fn-ul">
+                        <div class="fnul">
+                            <h3>新手指南</h3>
+                        </div>
+                        <ul>
+                            <li><a href="">购物流程</a> </li>
+                            <li><a href="">会员介绍</a> </li>
+                            <li><a href="">积分制度</a> </li>
+                        </ul>
+                </div>
+                <div class="fn-ul">
+                        <div class="fnul">
+                            <h3>新手指南</h3>
+                        </div>
+                        <ul>
+                            <li><a href="">购物流程</a> </li>
+                            <li><a href="">会员介绍</a> </li>
+                            <li><a href="">积分制度</a> </li>
+                        </ul>
+                </div>
+                <div class="fn-ul">
+                        <div class="fnul">
+                            <h3>新手指南</h3>
+                        </div>
+                        <ul>
+                            <li><a href="">购物流程</a> </li>
+                            <li><a href="">会员介绍</a> </li>
+                            <li><a href="">积分制度</a> </li>
+                        </ul>
+                </div>
+                <div class="fn-ul" style="border: none;">
+                    <img src="img/erweima.jpg" alt="微信二维码"/>
+                </div>
+            </div>
+        </div>
+        <div class="supuy-box">
+            <div class="supuy-info">
+                <ul>
+                    <li><a href="">关于我们</a></li>
+                    <li><a href="">人才招聘</a></li>
+                    <li><a href="">联系我们</a></li>
+                    <li><a href="" style="border:none;">招商合作</a></li>
+                    <li>
+                        <a target="_blank" href="" style="text-decoration:none;height:20px;line-height:20px;width: 100%;">
+                            <img src="img/ghs.png" style="float:left;">
+                            <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#666666;">
+                                京公网安备 37021202000512号
+                            </p>
+
+                        </a>
+                    </li>
+                </ul>
+               
+            </div>
+            <div>Copyright © 速普商城 2010-2016 All Right Reseved 鲁 ICP 证 09059644 号</div>
+            <div class="zizhi">
+                <a href="" target="_blank"><img src="img/zhizhao.png" alt="营业执照公示"/></a>
+                <span style="display: inline-block;position:relative;width:auto;">
+                <a href=""><img src="img/cnnic.png" oncontextmenu="return false" ></a></span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

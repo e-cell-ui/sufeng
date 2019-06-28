@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <script src="js/jquery-1.11.0.js"></script>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/liebiao.js"></script>
+    <script src="js/cart.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/cookie.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body>
+
+<!-- 头部 -->
+<div class="header">
+    <div class="top">
+        <div class="top-wrap">
+            <div class="top-login-box">
+                欢迎来到速普商城！请[<a href="denglu.html">登录</a>][<a href="zhuce.html">免费注册</a>]
+            </div>
+            <div class="top-nav">
+               <div class="box-li">
+                   <div class="top-nav-menu">
+                       <a href="">消费者告知书</a>
+                   </div>
+               </div>
+               <div class="box-li">
+                    <div class="top-nav-menu">
+                            <a href="">我的订单</a>
+                    </div>
+               </div>
+               <div class="box-li" id="supuy-user">
+                    <div class="top-nav-menu">
+                            <a href="">
+                                我的速普
+                                <span></span>
+                            </a>
+                    </div>
+                    <div id="user-con" class="user-con" style="display: none;">
+                        <ul>
+                            <li>
+                                <a href="">我的优惠券</a>
+                            </li>
+                            <li>
+                                <a href="">我的收藏</a>
+                            </li>
+                            <li>
+                                <a href="">我的积分</a>
+                            </li>
+                            <li>
+                                <a href="">现金账户</a>
+                            </li>
+                            <li>
+                                <a href="">待评价</a>
+                            </li>
+                        </ul>
+                    </div>    
+               </div>
+               <div class="box-li" id="supuy-app">
+                   <div class="top-nav-menu">
+                        <a href="">手机端
+                            <span></span>
+                        </a>
+                   </div>
+                   <div id="app-con" class="app-con" style="display: none;">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <img src="img/app.jpg" width="120" height="120" alt="APP二维码">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="img/weixin.jpg" width="120" height="120" alt="微信二维码">
+                                </a>
+                            </li>
+                        </ul>
+                   </div>
+               </div>
+               <div class="box-li">
+                    <div class="top-nav-menu">
+                            <a href="">网站导航</a>
+                    </div>
+               </div>
+               <div class="box-li" id="supuy-service">
+                    <div class="top-nav-menu">
+                            <a href="">
+                                400-618-0055
+                                <span></span>
+                            </a>
+                    </div>
+                    <div id="service-con" class="service-con" style="display: none;">
+                        <ul>
+                            <li>
+                                <a href="">帮助中心</a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    400-618-0055
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+               </div>
+            </div>
+        </div>
+    </div>
+    <div class="midlle">
+        <div class="midlle-wrap">
+            <div class="logo-f1">
+                <a href="index.html">
+                    <img src="img/logo.jpg" alt="速普母婴商城LOGO" title="速普母婴商城LOGO">
+                </a>
+            </div>
+            
+        </div>
+    </div>
+    <div class="headNav">
+        <div class="navCon-wrap">
+            
+            
+            <div class="navCon-menu">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="listitem">
+    <div class="itme">
+        <div class="time">
+                <ul id ="cart_message">
+                    <li>商品名</li>
+                    <li>单价</li>
+                    <li>数量</li>
+                    <li>小计</li>
+                    <li>操作</li>
+                </ul>
+                <ul id ="cart_item">
+                   
+                </ul>
+        </div>
+        <div class="close_item">
+            <div class="message">
+                <div></div>
+                <div class="message_">
+                     <h5><p>共计<span id="li">0</span> 商品 商品总额</p> <b>￥0.00</b></h5>
+                     <p>总金额（未含运费） <b>￥0.00</b></p>
+               </div>
+            </div>
+            <div class="aggregate_close">
+                <div></div>
+                <div>
+                    <p><span>总金额</span><span class="moke">￥0.00</span></p>
+                <button>立即结算</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+<!-- 尾部 -->
+<div id="footer">
+        <div class="supuy-cult">
+            <div class="supuy-wrap">
+                <div class="cul-img">
+                    <img src="img/point3.png" />
+                </div>
+                <div class="cul-img">
+                    <img src="img/point4.png"/>
+                </div>
+                <div class="cul-img">
+                    <img src="img/point1.png" />
+                </div>
+                <div class="cul-img">
+                    <img src="img/point2.png" />
+                </div>
+            </div>
+        </div>
+        <div class="footer-nav">
+            <div class="fn-wrap">
+                <div class="fn-ul">
+                    <div class="fnul">
+                        <h3>新手指南</h3>
+                    </div>
+                    <ul>
+                        <li><a href="">购物流程</a> </li>
+                        <li><a href="">会员介绍</a> </li>
+                        <li><a href="">积分制度</a> </li>
+                    </ul>
+                </div>
+                <div class="fn-ul">
+                        <div class="fnul">
+                            <h3>新手指南</h3>
+                        </div>
+                        <ul>
+                            <li><a href="">购物流程</a> </li>
+                            <li><a href="">会员介绍</a> </li>
+                            <li><a href="">积分制度</a> </li>
+                        </ul>
+                </div>
+                <div class="fn-ul">
+                        <div class="fnul">
+                            <h3>新手指南</h3>
+                        </div>
+                        <ul>
+                            <li><a href="">购物流程</a> </li>
+                            <li><a href="">会员介绍</a> </li>
+                            <li><a href="">积分制度</a> </li>
+                        </ul>
+                </div>
+                <div class="fn-ul">
+                        <div class="fnul">
+                            <h3>新手指南</h3>
+                        </div>
+                        <ul>
+                            <li><a href="">购物流程</a> </li>
+                            <li><a href="">会员介绍</a> </li>
+                            <li><a href="">积分制度</a> </li>
+                        </ul>
+                </div>
+                <div class="fn-ul">
+                        <div class="fnul">
+                            <h3>新手指南</h3>
+                        </div>
+                        <ul>
+                            <li><a href="">购物流程</a> </li>
+                            <li><a href="">会员介绍</a> </li>
+                            <li><a href="">积分制度</a> </li>
+                        </ul>
+                </div>
+                <div class="fn-ul">
+                        <div class="fnul">
+                            <h3>新手指南</h3>
+                        </div>
+                        <ul>
+                            <li><a href="">购物流程</a> </li>
+                            <li><a href="">会员介绍</a> </li>
+                            <li><a href="">积分制度</a> </li>
+                        </ul>
+                </div>
+                <div class="fn-ul" style="border: none;">
+                    <img src="img/erweima.jpg" alt="微信二维码"/>
+                </div>
+            </div>
+        </div>
+        <div class="supuy-box">
+            <div class="supuy-info">
+                <ul>
+                    <li><a href="">关于我们</a></li>
+                    <li><a href="">人才招聘</a></li>
+                    <li><a href="">联系我们</a></li>
+                    <li><a href="" style="border:none;">招商合作</a></li>
+                    <li>
+                        <a target="_blank" href="" style="text-decoration:none;height:20px;line-height:20px;width: 100%;">
+                            <img src="img/ghs.png" style="float:left;">
+                            <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#666666;">
+                                京公网安备 37021202000512号
+                            </p>
+
+                        </a>
+                    </li>
+                </ul>
+               
+            </div>
+            <div>Copyright © 速普商城 2010-2016 All Right Reseved 鲁 ICP 证 09059644 号</div>
+            <div class="zizhi">
+                <a href="" target="_blank"><img src="img/zhizhao.png" alt="营业执照公示"/></a>
+                <span style="display: inline-block;position:relative;width:auto;">
+                <a href=""><img src="img/cnnic.png" oncontextmenu="return false" ></a></span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
